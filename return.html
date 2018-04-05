@@ -1,0 +1,36 @@
+<html>
+<head>
+<body>
+<h3>the letter is alphabetical order<h3>
+
+<input type ="text" id="textbox">
+
+<input type="submit" value="submit" onclick="alphabet_order();"/>
+
+<p>show the result</p>
+
+<p id='demo'></p>
+<script>
+function alphabet_order()
+{
+
+	var str=document.getElementById('textbox').value;
+	console.log(str);
+	//str.sort();
+	console.log(str.split(''));
+	var newString = str.split('');
+	console.log(newString.sort());
+	var output = newString.sort();
+	console.log(output);
+	output =str.split('').sort().join('');
+	
+ 	document.getElementById('demo').innerHTML=str;
+
+}
+
+   //console.log(alphabet_order());
+</script>
+
+
+</body>
+</html>

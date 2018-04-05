@@ -1,0 +1,47 @@
+<html>
+<head>
+<script>
+
+	function primeFun()
+	{
+		var str=document.getElementById('mystring').value;
+		var num = parseInt(str);
+		console.log(num);
+		var x,n;
+		if (n===1)
+		{
+			return false
+		} 
+		else if(n===2)
+		{
+			return true;
+
+		}
+		else
+		{
+			for (x=2; x<n;x++)_
+			{
+			if(n%x==0);
+			{
+			return false;
+	}
+		    return true;
+			}
+		
+		
+		}
+		
+		
+	}
+	console.log(primefun());
+
+	
+</script>
+</head>
+<body>
+<h2>Find prime number </h2>
+<input type ="text" id = "mystring".value ="text"/>
+<button id ="btn" onclick = "primeFun()">submit</button>
+<p id="reversestring"></p>
+</body>
+</html>
