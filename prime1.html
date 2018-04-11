@@ -1,0 +1,74 @@
+<html>
+<head>
+<script>
+//<p id ="demo"></p>
+
+	function primeFun()
+	{
+		var str=document.getElementById('mystring').value;
+		var num = parseInt(str);
+		console.log(num);
+		var x;
+		if (num===1)
+		{
+			console.log("false");
+			document.getElementById("demo").innerHTML = "this is not prime ";
+		} 
+		else if(num===2 || num===3)
+		{
+			console.log("true");
+			document.getElementById("demo").innerHTML ="this is  a prime";
+		}
+		else
+		{
+			for (x = 2; x <= num;  x++)
+			{
+					 if(num%2==0)
+					  
+					  {
+					
+						 console.log("this is a  not prime");
+		   		      document.getElementById("demo").innerHTML ="this is  a  not prime";                         	
+                         }
+                          else if(num%3==0)
+                          {
+
+
+                          	console.log("this is not a prime");
+                          document.getElementById("demo").innerHTML ="this is not a prime";
+                      }
+                          else
+						 {
+
+                          console.log("this is a  prime");
+                          document.getElementById("demo").innerHTML ="this is a   prime";
+
+
+						 }
+						}
+					
+
+					}
+				
+
+		     //console.log("this is not a prime");
+		     //document.getElementById("demo").innerHTML="this is not a prime";
+		
+		
+		
+
+	
+
+	console.log(str);
+	
+}
+	
+</script>
+</head>
+<body>
+<h2>Find prime number </h2>
+<input type ="text" id = "mystring" value =""/>
+<button id ="btn" onclick = "primeFun()">submit</button>
+<p id ="demo"></p>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<html>
+<head>
+<h1>letter in alphabetical order</h1>
+<p> show the output in alphabetical</p>
+<script>
+var string=prompt("enter a line of text:");
+var textarr=string.split(' ');
+textarr.sort();
+alert(textarr.join(''));
+</script>
+</head>
+</html>

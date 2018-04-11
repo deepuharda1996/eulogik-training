@@ -1,0 +1,45 @@
+<html>
+<head>
+</head>
+<body>
+<h2>DISPLAY RECORDS</h2>
+
+<table style="width:100%"  id="table">
+  <tr>
+    <th>name</th>
+    <th>email</th> 
+    <th>phone</th>
+  </tr>
+  <tr>
+    <td  align ="center">deepika</td>
+    <td  align ="center">deepuharda1996@gmail.com</td>
+    <td  align ="center">9074433955</td> 
+  </tr>
+  </table>
+<p id = "demo"></p>
+</body>
+<script>
+//var x=10;
+//console.log(x);
+var data =[
+  {"name": "Deepika", "email": "deepuharda1996@gmail.com", "phone": 9074433955},
+  {"name": "rahul", "email": "deepuharda1996@gmail.com", "phone": 9074411555},
+  {"name": "swati", "email": "swatimotu@gmail.com", "phone": 8839494253},
+  {"name": "farhan", "email": "farhanahmed@gmail.com", "phone": 901433955},
+  {"name": "rajesh", "email": "rajeshraj@gmail.com", "phone": 851667442}]
+  document.getElementById("table").innerHTML="<tr><th>name</th><th>email</th><th>phone</th></tr>";
+                           
+  for(var i =0; i<=4; i++)
+ 
+  {
+  console.log(data[i]);
+
+   document.getElementById("table").innerHTML="<tr><th>" +data[i].name +"</th><th>" + data[i].email +"</th><th>" +data[i].phone + "</th></tr>";
+}
+
+
+
+  //document.getElementById("demo").innerHTML=data[0];
+ // alert(data[0]);
+</script>
+</html>

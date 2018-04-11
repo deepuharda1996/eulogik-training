@@ -1,0 +1,20 @@
+<html>
+<body>
+<input type ="text" id = "mystring".value ="text"/>
+<button id ="btn" onclick = "uppercase()">submit</button>
+<p id="demo"><strong>the string is print</strong></p>
+<script>
+function uppercase() {
+	var str=document.getElementById('mystring').value;
+	//document.getElementById("uppercase").innerHTML = uppercase(str);
+	console.log(str);
+	var array = str.split(' ');
+	var newarray = [];
+    for(x=0; x<array.length; x++) {
+ 	newarray.push(array[x].charAt(0).toUpperCase()+array[x].slice(1));
+	}
+	console.log(newarray.join(' '))
+}                                                           
+
+</script>
+</html>

@@ -1,0 +1,45 @@
+<html>
+<head>
+<script>
+  function vowelfun()
+   {
+  
+  	var str=document.getElementById('mystring').value;
+  	console.log('str');
+  	var w ='auioeAEOIU';
+
+		var x;
+
+        var count= 0;
+    for(x=0; x<str.length; x++)
+    {	
+
+			//console.log(str.charAt(x));
+		//	document.getElementById("demo").innerHTML="total number of vowels" + count;
+			{
+		   if (str.charAt(x)==='a'||str.charAt(x)==='i'||str.charAt(x)==='e'||str.charAt(x)==='o'||str.charAt(x)==='u'
+		   	||str.charAt(x)==='A'||str.charAt(x)==='I'||str.charAt(x)==='E'||str.charAt(x)==='O'||str.charAt(x)==='U')
+		   {
+   
+		 count++;
+		   }
+
+
+		   	console.log(str.charAt(x));
+			document.getElementById("demo").innerHTML="total number of vowels" + count;
+
+	
+    }
+		}
+	
+	}
+	   
+</script>
+</head>
+<body>
+<h2>Find vowel string</h2>
+<input type ="text" id = "mystring" value =""/>
+<button id ="btn" onclick = "vowelfun()">submit</button>
+<p id ="demo"></p>
+</body>
+</html>
